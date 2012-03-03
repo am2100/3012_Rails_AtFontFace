@@ -41,6 +41,8 @@ Download your kit.
 ### Add fonts and renamed stylesheet
 to: vendor/assets/fonts
 
+Nb. You don't need the -demo.html files.
+
 ## Amend fonts.css.scss.erb
 ### Add rails asset_paths
 src: url('opensans-light-webfont-webfont.eot');
@@ -49,12 +51,22 @@ src: url('opensans-light-webfont-webfont.eot');
 
 src: url('<%= asset_path('opensans-light-webfont-webfont.eot') %>');
 
-### Add local src: to beginning of third line
+### Add local src:
+(Ln 3 of each @font-face declaration)
+
 src: url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
 
 =>
 
 src: local('Open Sans Light'), url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
+
+## Add webfont stylesheet to relevant .erb template / partial
+      <%= stylesheet_link_tag 'fonts', :media => 'screen' %>
+
+## Reference the font in your CSS
+p {
+  font-family: 'Webfont';
+  }
 
 >\> Command Line
 
