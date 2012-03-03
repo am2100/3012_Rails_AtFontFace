@@ -12,6 +12,8 @@ Nb. Beyond the fact that this works for my Windows XP system, I can offer you no
 
 ## Browse for fonts at [Font Squirrel](http://www.fontsquirrel.com/fontface)
 
+Select a font
+
 View @ff Demo
 
 Download & unzip @font-face Kit
@@ -27,7 +29,9 @@ The font names are in the drop down menu at the top left of the font sample.
 
 ## Process your chosen fonts through the [@font-face Kit Generator](http://fontsquirrel.com/fontface/generator)
 See [The Official 'How to use the Generator' Post](http://www.fontsquirrel.com/forum/discussion/5/generator-the-official-how-to-use-the-generator-post#Item_1) for details.
+
 Upload either .ttf / .otf / .pfb font files for processing.
+
 Download your kit.
 
 ## Add fonts and stylesheet.css to your rails app
@@ -44,7 +48,7 @@ src: url('opensans-light-webfont-webfont.eot');
 src: url('<%= asset_path('opensans-light-webfont-webfont.eot') %>');
 
 ### Add local src: to beginning of third line
-src: url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
+src: url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),  
 =>
 src: local('Open Sans Light'), url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
 
