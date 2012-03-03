@@ -23,13 +23,13 @@
     <favorites_list name="at_font_face" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5735294">
       <split-first>
         <leaf>
           <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="50" column="105" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.75224215">
+                <state line="46" column="0" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.63789237">
                   <folding />
                 </state>
               </provider>
@@ -569,7 +569,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="105" selection-start="1834" selection-end="1834" vertical-scroll-proportion="0.75224215">
+        <state line="46" column="0" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.63789237">
           <folding />
         </state>
       </provider>

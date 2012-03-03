@@ -44,12 +44,16 @@ to: vendor/assets/fonts
 ## Amend fonts.css.scss.erb
 ### Add rails asset_paths
 src: url('opensans-light-webfont-webfont.eot');
+
 =>
+
 src: url('<%= asset_path('opensans-light-webfont-webfont.eot') %>');
 
 ### Add local src: to beginning of third line
-src: url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),  
+src: url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
+
 =>
+
 src: local('Open Sans Light'), url('<%= asset_path('opensans-light-webfont-webfont.eot?#iefix') %>') format('embedded-opentype'),
 
 >\> Command Line
